@@ -175,7 +175,7 @@
                 </div>
               </div>
 
-              <a
+              <!-- <a
                 href="#acara"
                 class="heroCta heroCta--primary"
                 id="toAcaraBtn"
@@ -187,7 +187,7 @@
                 <span class="heroCtaArrow" aria-hidden="true">
                   <i data-lucide="arrow-right" class="lucide-icon"></i>
                 </span>
-              </a>
+              </a> -->
             </section>
           </div>
         </header>
@@ -295,8 +295,8 @@
                 <p class="flex gap-2 items-start">
                   <i data-lucide="map-pin" class="lucide-icon mt-0.5"></i>
                   <span>
-                    Jl. Sri Menanti, Ds. Tanjung Raja, Kec. Tanjung Raja,<br />
-                    Kab. Lampung Utara
+                    Lingkungan VI B yukum jaya kec terbanggi besar <br />
+                    kab. Lampung tengah
                   </span>
                 </p>
               </div>
@@ -406,10 +406,6 @@
                 </div>
               </div>
             </div>
-
-            <p class="isi opacity-80 mt-6">
-              *Kamu bisa ganti teks + foto sesuai cerita asli. (story1–story4)
-            </p>
           </div>
         </div>
       </section>
@@ -685,7 +681,6 @@
         onSnapshot,
       } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
 
-      // ✅ config kamu (SUDAH BENAR)
       const firebaseConfig = {
         apiKey: "AIzaSyDHfWjivMeLnpyUa9IqIWUyFlofadKCfKU",
         authDomain: "undangan-30742.firebaseapp.com",
@@ -696,12 +691,10 @@
         measurementId: "G-1GZJL54KJF",
       };
 
-      // init
       const app = initializeApp(firebaseConfig);
       getAnalytics(app);
       const db = getFirestore(app);
 
-      // 👉 biar bisa dipakai di script.js
       window.__FIREBASE__ = {
         db,
         collection,
@@ -712,6 +705,12 @@
         limit,
         onSnapshot,
       };
+    </script>
+
+    <script>
+      // ✅ PENANDA UCAPAN (UNDHU MANTU)
+      window.__WEDDING_ID__ = "heri-yola";
+      window.__EVENT_ID__ = "unduh-mantu";
     </script>
   </body>
 </html>

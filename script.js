@@ -182,8 +182,17 @@ function initWishes() {
     onSnapshot,
   } = window.__FIREBASE__;
 
-  const weddingId = "heri-yola"; // bebas, asal konsisten
-  const wishesRef = collection(db, "weddings", weddingId, "wishes");
+  const weddingId = window.__WEDDING_ID__ || "heri-yola";
+  const eventId = window.__EVENT_ID__ || "unduh-mantu"; // default
+
+  const wishesRef = collection(
+    db,
+    "weddings",
+    weddingId,
+    "events",
+    eventId,
+    "wishes",
+  );
 
   function render(item) {
     return `
