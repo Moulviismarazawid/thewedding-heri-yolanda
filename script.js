@@ -123,7 +123,7 @@ function initCountdown() {
   if (!dEl || !hEl || !mEl || !sEl) return;
 
   // 15 Feb 2026 09:00 WIB (UTC+7) => 02:00 UTC
-  const targetUTC = Date.UTC(2026, 1, 15, 2, 0, 0);
+  const targetUTC = Date.UTC(2026, 1, 8, 2, 0, 0);
 
   const tick = () => {
     const diff = targetUTC - Date.now();
